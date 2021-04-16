@@ -66,9 +66,9 @@ uri格式：
 baseURI + tokenId + 每个NFT uri
 
 例如创世NFT：
-baseURI： https://nft.moonswap.fi/genesis/meta/
-tokenId: 1006
-创建uri: /1006-1_2_0.json
+- baseURI： https://nft.moonswap.fi/genesis/meta/
+- tokenId: 1006
+- 创建uri: /1006-1_2_0.json
 
 新的NFT的URI格式如下：
 https://nft.moonswap.fi/genesis/meta/1006/1006-1_2_0.json
