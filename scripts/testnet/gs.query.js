@@ -27,7 +27,7 @@ async function main() {
   // string join (baseUri, tokenId, 1006-1_2_0.json)
   // eg: https://nft.moonswap.fi/genesis/meta/1006/1006-1_2_0.json
   // NFT MetaInfo {token_id: 1, image: 'url', description: '', name: ''}
-  let _uri = await uri(_tokenId);
+  let _uri = await contract.uri(_tokenId);
   console.log('_uri meta =>', _uri);
 }
 
