@@ -20,12 +20,15 @@ const contract = cfx.Contract({
 });
 
 async function main() {
-  let _id = 1
-  await ownersOf(_id);
+  let _tokenId = 1
+  await ownersOf(_tokenId);
 
-  // for(var i = 1; i < 30; i ++){
-  //   await ownersOf(i);
-  // }
+  // return nft meta info  baseUri + create nft uri
+  // string join (baseUri, tokenId, 1006-1_2_0.json)
+  // eg: https://nft.moonswap.fi/genesis/meta/1006/1006-1_2_0.json
+  // NFT MetaInfo {token_id: 1, image: 'url', description: '', name: ''}
+  let _uri = await uri(_tokenId);
+  console.log('_uri meta =>', _uri);
 }
 
 async function ownersOf(_id)
