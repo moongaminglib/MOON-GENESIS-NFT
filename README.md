@@ -48,7 +48,7 @@ node script/testnet/gs.create.js
 
 ## NFT MetaInfo
 
-开发者需要支持该NFT的uri, 提供以下的格式的信息
+开发者需要支持该NFT的uri, 提供以下的META格式的信息
 
 ```
 {
